@@ -24,3 +24,16 @@ func ContainDuplicates(arr []int) bool {
 	}
 	return false
 }
+
+func DividingPoint(arr []int) int {
+	num1 := arr[0]
+	num2 := arr[len(arr)-1]
+	num3 := (len(arr) - 1) / 2
+	if num1 > num2 && num1 < num3 {
+		return num1
+	}
+	if num2 > num1 && num2 < num3 {
+		return num2
+	}
+	return num3
+}
