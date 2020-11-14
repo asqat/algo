@@ -25,6 +25,7 @@ func ContainDuplicates(arr []int) bool {
 	return false
 }
 
+// DividingPoint returns an average value from arr
 func DividingPoint(arr []int) int {
 	num1 := arr[0]
 	num2 := arr[len(arr)-1]
